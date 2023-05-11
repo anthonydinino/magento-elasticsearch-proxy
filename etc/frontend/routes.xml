@@ -2,6 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route></route>
+        <route id="search_proxy" frontName="_search">
+            <module name="Aligent_ElasticsearchProxy" />
+        </route>
     </router>
 </config>
